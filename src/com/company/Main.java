@@ -1,10 +1,12 @@
 package com.company;
 
-public class Main {
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 
+public class Main {
     public static void main(String[] args) {
-        System.out.println("This is my first project on Github!");
-        System.out.println("This is my first project on Github!");
-        System.out.println("This is my first project on Github!");
+        String st = DateTimeFormatter.ISO_OFFSET_DATE_TIME.format(LocalDateTime.now().atZone(ZoneId.of("UTC+2")));
     }
 }
