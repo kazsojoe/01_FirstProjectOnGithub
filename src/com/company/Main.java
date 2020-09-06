@@ -8,5 +8,6 @@ import java.time.format.DateTimeFormatter;
 public class Main {
     public static void main(String[] args) {
         String st = DateTimeFormatter.ISO_OFFSET_DATE_TIME.format(LocalDateTime.now().atZone(ZoneId.of("UTC+2")));
+        System.out.println(st);
     }
 }
