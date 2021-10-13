@@ -5,11 +5,30 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.Random;
+import java.util.Scanner;
+import org.apache.commons.csv.CSVParser;
 
 public class Main {
     public static void main(String[] args) {
 
+Random random = new Random();
+int rnd = random.nextInt(6) + 4; // bemenet:6 -> 0-5 közötti számot ad vissza, tehát ez 4-9 között
+        System.out.println(rnd);
+
+//        LocalDate date = LocalDate.of(2021, 03,14);
+//        String day = date.getDayOfWeek().toString();
+//        System.out.println(day);
+
+//        int sunday = Calendar.SATURDAY;
+//        int dayOfWeek = Calendar.DAY_OF_WEEK;
+//        System.out.println(sunday + " " + dayOfWeek);
+
+//        CSVParser parser = new CSVParser();
+//
+//        Scanner sc = new Scanner("");
 /*
 //        String st = DateTimeFormatter.ISO_OFFSET_DATE_TIME.format(LocalDateTime.now().atZone(ZoneId.of("UTC+2")));
 //        System.out.println(st);
@@ -69,11 +88,11 @@ public class Main {
 //        System.out.println(newLDT);
 
 
-        String dt = "2020-10-16T14:40:21.000+02:00";
-        System.out.println(dt);
-        dt = dt.substring(0,19);
-        dt = dt.replace("T", " ");
-        System.out.println(dt);
+//        String dt = "2020-10-16T14:40:21.000+02:00";
+//        System.out.println(dt);
+//        dt = dt.substring(0,19);
+//        dt = dt.replace("T", " ");
+//        System.out.println(dt);
 
 
 //        String myName = "2020-10-16 14.40.21";
