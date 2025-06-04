@@ -6,5 +6,6 @@ public class Main {
         System.out.println("This is my first project on Github!");
         System.out.println("This is my first project on Github!");
         System.out.println("This is my first project on Github!");
+        System.out.println("This is my first project on Github!");
     }
 }
